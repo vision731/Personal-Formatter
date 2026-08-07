@@ -1,0 +1,76 @@
+﻿# ============================================================
+# 基于 LLVM 风格定制 — C++ 项目专用
+# 核心原则：只有 ; 是换行标准，其余全部合在一行
+# ============================================================
+BasedOnStyle: LLVM
+Language: Cpp
+
+# --- 行宽设极大值（强制合行 + Allman 生效）---
+ColumnLimit: 99999
+
+# --- 缩进：4 空格 ---
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ContinuationIndentWidth: 4
+# public/protected/private 顶格，与 class 关键字对齐
+AccessModifierOffset: -4
+
+# ============================================================
+# 大括号：Allman 风格（左大括号统一放下一行）
+# ============================================================
+BreakBeforeBraces: Allman
+
+# --- 禁止单行简写 ---
+AllowShortBlocksOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: None
+AllowShortLambdasOnASingleLine: false
+
+# --- 函数参数/调用参数绝不换行 ---
+AllowAllParametersOfDeclarationOnNextLine: false
+AllowAllArgumentsOnNextLine: false
+BinPackParameters: true
+BinPackArguments: true
+
+# --- 构造函数初始化列表必须一行（配合 ColumnLimit: 99999）---
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+BreakConstructorInitializers: AfterColon
+
+# --- 返回类型后不换行 ---
+AlwaysBreakAfterReturnType: None
+
+# --- 三元表达式不换行 ---
+BreakBeforeTernaryOperators: false
+
+# --- 二元运算符不换行（=, +, << 等全部同行）---
+BreakBeforeBinaryOperators: None
+PenaltyBreakFirstLessLess: 1000000
+
+# --- 关闭对齐，延续用等宽缩进 ---
+AlignOperands: false
+AlignAfterOpenBracket: DontAlign
+
+# --- 控制语句关键字前加空格 ---
+SpaceBeforeParens: ControlStatements
+SpaceBeforeRangeBasedForLoopColon: true
+
+# --- 指针/引用：* 跟类型，& 跟变量名 ---
+PointerAlignment: Left
+ReferenceAlignment: Right
+
+# --- C++ 标准 ---
+Standard: c++17
+
+# --- 嵌套 namespace 分层缩进 ---
+NamespaceIndentation: All
+
+# --- 禁止对齐（int a = 1; int b = 2; → 空格不补全）---
+AlignConsecutiveAssignments: false
+AlignConsecutiveDeclarations: false
+AlignConsecutiveMacros: false
+AlignConsecutiveBitFields: false
+
+# 不能解决的问题是,当你把两条语句中间用注释隔开,那么clangformat会认为那不是一条语句,将不会执行更改
+# 不能手动添加缺少的控制逻辑的大括号,这需要用到一些高级ide处理,因为可能会造成原程序语义出现改变

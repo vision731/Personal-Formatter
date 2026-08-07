@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<profiles version="22">
+    <profile kind="CodeFormatterProfile" name="CRM Allman Style" version="22">
+
+        <!--四空格缩进-->
+        <setting id="org.eclipse.jdt.core.formatter.indentation.size" value="4" />
+        <setting id="org.eclipse.jdt.core.formatter.tabulation.char" value="space" />
+        <setting id="org.eclipse.jdt.core.formatter.tabulation.size" value="4" />
+        <setting id="org.eclipse.jdt.core.formatter.use_tabs_only_for_leading_indentations"
+            value="false" />
+
+        <!--行宽:设极大值(不换行)-->
+        <setting id="org.eclipse.jdt.core.formatter.lineSplit" value="9999" />
+        <setting id="org.eclipse.jdt.core.formatter.join_wrapped_lines" value="true" />
+        <setting id="org.eclipse.jdt.core.formatter.join_lines_in_comments" value="false" />
+
+        <!--Allman大括号(全部放到下一行)-->
+        <setting id="org.eclipse.jdt.core.formatter.brace_position_for_anonymous_type_declaration"
+            value="next_line" />
+        <setting id="org.eclipse.jdt.core.formatter.brace_position_for_type_declaration"
+            value="next_line" />
+        <setting id="org.eclipse.jdt.core.formatter.brace_position_for_method_declaration"
+            value="next_line" />
+        <setting id="org.eclipse.jdt.core.formatter.brace_position_for_block" value="next_line" />
+        <setting id="org.eclipse.jdt.core.formatter.brace_position_for_switch" value="next_line" />
+        <setting id="org.eclipse.jdt.core.formatter.brace_position_for_enum_declaration"
+            value="next_line" />
+        <setting id="org.eclipse.jdt.core.formatter.brace_position_for_enum_constant"
+            value="next_line" />
+        <setting id="org.eclipse.jdt.core.formatter.brace_position_for_constructor_declaration"
+            value="next_line" />
+        <setting id="org.eclipse.jdt.core.formatter.brace_position_for_lambda_body"
+            value="next_line" />
+        <setting id="org.eclipse.jdt.core.formatter.brace_position_for_array_initializer"
+            value="next_line" />
+        <setting id="org.eclipse.jdt.core.formatter.parentheses_positions_in_method_delcaration"
+            value="preserve_positions" />
+        <setting id="org.eclipse.jdt.core.formatter.parentheses_positions_in_try_clause"
+            value="preserve_positions" />
+
+        <!--禁止单行if/for/while:必须有{}且展开-->
+        <setting id="org.eclipse.jdt.core.formatter.keep_simple_if_on_one_line" value="false" />
+        <setting id="org.eclipse.jdt.core.formatter.keep_then_statement_on_same_line" value="false" />
+        <setting id="org.eclipse.jdt.core.formatter.keep_else_statement_on_same_line" value="false" />
+        <setting id="org.eclipse.jdt.core.formatter.keep_simple_for_body_on_same_line" value="false" />
+        <setting id="org.eclipse.jdt.core.formatter.keep_simple_while_body_on_same_line"
+            value="false" />
+        <setting id="org.eclipse.jdt.core.formatter.keep_simple_do_while_body_on_same_line"
+            value="false" />
+        <setting id="org.eclipse.jdt.core.formatter.keep_guardian_clause_on_one_line" value="false" />
+
+        <!--@注解独占一行-->
+        <setting id="org.eclipse.jdt.core.formatter.insert_new_line_after_annotation_on_member"
+            value="insert" />
+        <setting id="org.eclipse.jdt.core.formatter.insert_new_line_after_annotation_on_type"
+            value="insert" />
+        <setting
+            id="org.eclipse.jdt.core.formatter.insert_new_line_after_annotation_on_local_variable"
+            value="insert" />
+        <setting id="org.eclipse.jdt.core.formatter.insert_new_line_after_annotation_on_parameter"
+            value="do not insert" />
+        <setting id="org.eclipse.jdt.core.formatter.insert_new_line_after_annotation_on_package"
+            value="insert" />
+
+        <!--参数/参数列表不换行-->
+        <setting
+            id="org.eclipse.jdt.core.formatter.continuation_indentation_for_parameter_annotation"
+            value="1" />
+        <setting id="org.eclipse.jdt.core.formatter.alignment_for_parameters_in_method_declaration"
+            value="0" />
+        <setting id="org.eclipse.jdt.core.formatter.alignment_for_arguments_in_method_invocation"
+            value="0" />
+        <setting id="org.eclipse.jdt.core.formatter.alignment_for_arguments_in_enum_constant"
+            value="0" />
+        <setting id="org.eclipse.jdt.core.formatter.alignment_for_arguments_in_annotation" value="0" />
+
+        <!--运算符不换行,字符串拼接也是-->
+        <setting id="org.eclipse.jdt.core.formatter.wrap_before_binary_operator" value="false" />
+        <setting id="org.eclipse.jdt.core.formatter.wrap_before_assignment_operator" value="false" />
+        <setting id="org.eclipse.jdt.core.formatter.wrap_before_conditional_operator" value="false" />
+        <setting id="org.eclipse.jdt.core.formatter.wrap_before_or_operator_multicatch"
+            value="false" />
+        <setting id="org.eclipse.jdt.core.formatter.never_indent_line_comments_on_first_column"
+            value="false" />
+
+        <!--三元表达式不换行-->
+        <setting id="org.eclipse.jdt.core.formatter.alignment_for_conditional_expression" value="0" />
+        <setting id="org.eclipse.jdt.core.formatter.alignment_for_compact_loops" value="0" />
+
+        <!--控制语句关键字后加空格-->
+        <setting id="org.eclipse.jdt.core.formatter.insert_space_before_opening_paren_in_if"
+            value="insert" />
+        <setting id="org.eclipse.jdt.core.formatter.insert_space_before_opening_paren_in_for"
+            value="insert" />
+        <setting id="org.eclipse.jdt.core.formatter.insert_space_before_opening_paren_in_while"
+            value="insert" />
+        <setting id="org.eclipse.jdt.core.formatter.insert_space_before_opening_paren_in_switch"
+            value="insert" />
+        <setting id="org.eclipse.jdt.core.formatter.insert_space_before_opening_paren_in_catch"
+            value="insert" />
+        <setting
+            id="org.eclipse.jdt.core.formatter.insert_space_before_opening_paren_in_synchronized"
+            value="insert" />
+
+        <!-- ===== 不压缩空代码块 ===== -->
+        <setting id="org.eclipse.jdt.core.formatter.put_empty_statement_on_new_line" value="true" />
+
+        <!--throws保持在方法签名同行-->
+        <setting
+            id="org.eclipse.jdt.core.formatter.alignment_for_throws_clause_in_method_declaration"
+            value="0" />
+
+        <!--catch/else/finally独立一行,不跟在右大括号后面-->
+        <setting id="org.eclipse.jdt.core.formatter.insert_new_line_before_catch_in_try_statement"
+            value="insert" />
+        <setting id="org.eclipse.jdt.core.formatter.insert_new_line_before_else_in_if_statement"
+            value="insert" />
+        <setting id="org.eclipse.jdt.core.formatter.insert_new_line_before_finally_in_try_statement"
+            value="insert" />
+        <setting id="org.eclipse.jdt.core.formatter.insert_new_line_before_while_in_do_statement"
+            value="insert" />
+
+    </profile>
+</profiles>

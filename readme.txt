@@ -1,0 +1,2 @@
+clangformat是用于cpp格式化的 spotless是用于java的 jspcompression是基于状态机自编的jsp压缩文件
+压缩后结合eclipse的格式化使用
